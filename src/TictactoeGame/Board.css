@@ -1,0 +1,73 @@
+ /* Board.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  padding: 10px;
+  
+   
+}
+
+.game-container {
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 500px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.turn {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.winner-banner, .draw-banner {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
